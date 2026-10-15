@@ -82,7 +82,7 @@ export default function Home() {
             <h2 className="mt-3 text-4xl md:text-5xl">{t({ en: 'The oils of AromaTouch', es: 'Los aceites de AromaTouch' })}</h2>
           </div>
           <Link to="/shop" className="link text-sm">
-            {t({ en: 'Shop all', es: 'Ver tienda' })}
+            {t({ en: 'See our products', es: 'Ver Nuestros Productos' })}
           </Link>
         </div>
         <div className="mt-10 grid grid-cols-2 gap-x-5 gap-y-10 md:grid-cols-4">

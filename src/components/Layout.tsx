@@ -6,7 +6,7 @@ import { prettyPhone, useContent, waLink } from '../content'
 
 const nav = [
   { to: '/therapies', en: 'Therapies', es: 'Terapias' },
-  { to: '/shop', en: 'Shop', es: 'Tienda' },
+  { to: '/shop', en: 'Our Products', es: 'Nuestros Productos' },
   { to: '/wellness', en: 'Wellness tips', es: 'Consejos' },
   { to: '/gallery', en: 'Gallery', es: 'Galería' },
 ]
