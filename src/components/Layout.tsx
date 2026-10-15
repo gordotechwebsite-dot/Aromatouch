@@ -13,7 +13,7 @@ const nav = [
 
 export default function Layout() {
   const { t } = useLang()
-  const { business, serviceAreas } = useContent()
+  const { business } = useContent()
   const [open, setOpen] = useState(false)
 
   return (
@@ -70,7 +70,7 @@ export default function Layout() {
       </main>
 
       <footer className="mt-24 bg-ink text-cream/80">
-        <div className="wrap grid gap-10 py-14 md:grid-cols-3">
+        <div className="wrap grid gap-10 py-14 md:grid-cols-2">
           <div>
             <img src="/logo.png" alt="AromaTouch by Nayibe A" className="h-28 w-auto" />
             <p className="mt-4 max-w-xs text-sm">
@@ -125,16 +125,12 @@ export default function Layout() {
               )}
             </ul>
           </div>
-          <div className="text-sm">
-            <p className="eyebrow text-gold-light">{t({ en: 'Serving', es: 'Atendemos' })}</p>
-            <p className="mt-4 leading-relaxed">{serviceAreas.join(' · ')}</p>
-          </div>
         </div>
         <div className="border-t border-cream/10">
           <div className="wrap py-6 text-xs leading-relaxed text-cream/50">
             {t({
-              en: 'Independent doTERRA Wellness Advocate. These statements have not been evaluated by the Food and Drug Administration. Products are not intended to diagnose, treat, cure or prevent any disease.',
-              es: 'Wellness Advocate independiente de doTERRA. Estas declaraciones no han sido evaluadas por la FDA. Los productos no pretenden diagnosticar, tratar, curar ni prevenir ninguna enfermedad.',
+              en: 'These statements have not been evaluated by the Food and Drug Administration. Products are not intended to diagnose, treat, cure or prevent any disease.',
+              es: 'Estas declaraciones no han sido evaluadas por la FDA. Los productos no pretenden diagnosticar, tratar, curar ni prevenir ninguna enfermedad.',
             })}
           </div>
         </div>
