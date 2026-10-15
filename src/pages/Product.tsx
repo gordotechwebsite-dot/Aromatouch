@@ -13,7 +13,7 @@ export default function Product() {
   if (!p) {
     return (
       <div className="wrap py-24">
-        <Link to="/shop" className="link">{t({ en: 'Back to shop', es: 'Volver a la tienda' })}</Link>
+        <Link to="/shop" className="link">{t({ en: 'Back to Our Products', es: 'Volver a Nuestros Productos' })}</Link>
       </div>
     )
   }
@@ -28,7 +28,7 @@ export default function Product() {
     <>
       <div className="wrap pt-8">
         <Link to="/shop" className="link inline-flex items-center gap-1 text-sm">
-          <ArrowLeft size={14} /> {t({ en: 'Shop', es: 'Tienda' })}
+          <ArrowLeft size={14} /> {t({ en: 'Our Products', es: 'Nuestros Productos' })}
         </Link>
       </div>
       <section className="wrap grid gap-10 py-10 md:grid-cols-2">

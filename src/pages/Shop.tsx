@@ -9,7 +9,7 @@ export default function Shop() {
   return (
     <>
       <PageHead
-        eyebrow={t({ en: 'Shop', es: 'Tienda' })}
+        eyebrow={t({ en: 'Our Products', es: 'Nuestros Productos' })}
         title={t({ en: 'doTERRA essential oils', es: 'Aceites esenciales doTERRA' })}
         intro={t({
           en: 'The AromaTouch Massage Blend and the six oils that make it. Orders are placed securely on doTERRA.com under Nayibe’s account.',
