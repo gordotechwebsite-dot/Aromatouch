@@ -11,23 +11,6 @@ const nav = [
   { to: '/gallery', en: 'Gallery', es: 'Galería' },
 ]
 
-function LangSwitch() {
-  const { lang, setLang } = useLang()
-  return (
-    <div className="flex text-xs tracking-widest">
-      {(['en', 'es'] as const).map((l) => (
-        <button
-          key={l}
-          onClick={() => setLang(l)}
-          className={`px-2 py-1 uppercase ${lang === l ? 'text-ink' : 'text-ink/40 hover:text-ink'}`}
-        >
-          {l}
-        </button>
-      ))}
-    </div>
-  )
-}
-
 export default function Layout() {
   const { t } = useLang()
   const { business, serviceAreas } = useContent()
@@ -56,7 +39,6 @@ export default function Layout() {
             ))}
           </nav>
           <div className="hidden items-center gap-4 lg:flex">
-            <LangSwitch />
             <Link to="/book" className="btn">
               {t({ en: 'Book a session', es: 'Reservar' })}
             </Link>
@@ -73,9 +55,8 @@ export default function Layout() {
                   {t(n)}
                 </NavLink>
               ))}
-              <div className="flex items-center justify-between pt-4">
-                <LangSwitch />
-                <Link to="/book" className="btn" onClick={() => setOpen(false)}>
+              <div className="pt-4">
+                    <Link to="/book" className="btn" onClick={() => setOpen(false)}>
                   {t({ en: 'Book a session', es: 'Reservar' })}
                 </Link>
               </div>

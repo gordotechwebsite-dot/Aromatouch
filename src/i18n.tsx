@@ -14,9 +14,7 @@ type Ctx = {
 const LangContext = createContext<Ctx | null>(null)
 
 function initialLang(): Lang {
-  const saved = localStorage.getItem('lang')
-  if (saved === 'en' || saved === 'es') return saved
-  return navigator.language.toLowerCase().startsWith('es') ? 'es' : 'en'
+  return 'es'
 }
 
 export function LangProvider({ children }: { children: ReactNode }) {
