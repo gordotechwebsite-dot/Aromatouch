@@ -27,8 +27,8 @@ export default function Home() {
             </div>
           </div>
           {hero.image && (
-            <div className="aspect-[3/2] overflow-hidden rounded-xl bg-sand">
-              <img src={hero.image} alt="" className="h-full w-full object-cover" />
+            <div className="flex aspect-[3/2] items-center justify-center">
+              <img src={hero.image} alt="" className="max-h-full w-full object-contain" />
             </div>
           )}
         </div>
@@ -51,7 +51,7 @@ export default function Home() {
       </section>
 
       <section className="wrap grid gap-12 py-20 md:grid-cols-2 md:items-center">
-        <div className="flex aspect-[4/5] items-center justify-center overflow-hidden bg-sand">
+        <div className="flex aspect-[4/5] items-center justify-center overflow-hidden">
           {about.photo ? (
             <img src={about.photo} alt={business.owner} className="h-full w-full object-cover" />
           ) : (
@@ -59,7 +59,7 @@ export default function Home() {
           )}
         </div>
         <div>
-          <p className="eyebrow">{t({ en: 'Founder & therapist', es: 'Creadora y terapeuta' })}</p>
+          <p className="eyebrow">{t({ en: 'Therapist', es: 'Terapeuta' })}</p>
           <h2 className="mt-3 text-4xl md:text-5xl">{t(about.title)}</h2>
           {tl(about.body).map((p, i) => (
             <p key={i} className="mt-5 leading-relaxed text-ink/75">
