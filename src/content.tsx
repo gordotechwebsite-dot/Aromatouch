@@ -25,8 +25,8 @@ export const defaultContent: SiteContent = {
   hero: {
     eyebrow: { en: 'Scottsdale · Greater Phoenix', es: 'Scottsdale · Área de Phoenix' },
     title: {
-      en: 'The AromaTouch Technique, by the hands of Nayibe Alarcon',
-      es: 'La Técnica AromaTouch, en las manos de Nayibe Alarcon',
+      en: 'The Incredible AromaTouch Technique',
+      es: 'La Increíble Técnica de AromaTouch',
     },
     subtitle: {
       en: 'Essential oil therapy with eight pure doTERRA oils, at your home in Scottsdale and the Phoenix metro area.',
