@@ -25,20 +25,20 @@ export const defaultContent: SiteContent = {
   hero: {
     eyebrow: { en: 'Scottsdale · Greater Phoenix', es: 'Scottsdale · Área de Phoenix' },
     title: {
-      en: 'The AromaTouch Technique, by the hands of Nayibe Alarcon',
-      es: 'La Técnica AromaTouch, en las manos de Nayibe Alarcon',
+      en: 'The Incredible AromaTouch Technique',
+      es: 'La Increíble Técnica de AromaTouch',
     },
     subtitle: {
-      en: 'Essential oil therapy with eight pure doTERRA oils, at your home in Scottsdale and the Phoenix metro area. Home visits are free.',
-      es: 'Terapia con ocho aceites esenciales puros doTERRA, en tu casa en Scottsdale y el área metropolitana de Phoenix. El domicilio es gratis.',
+      en: 'Essential oil therapy with eight pure doTERRA oils, at your home in Scottsdale and the Phoenix metro area.',
+      es: 'Terapia con ocho aceites esenciales puros doTERRA, en tu casa en Scottsdale y el área metropolitana de Phoenix.',
     },
     image: '/products/aromatouch-massage-blend-oil.webp',
   },
   promo: {
-    title: { en: 'Free home visits', es: 'Domicilio gratis' },
+    title: { en: 'Home visits', es: 'Servicio a domicilio' },
     text: {
-      en: 'Treat yourself to a moment just for you. Nayibe brings the table, the oils and the calm to your home anywhere in Scottsdale and the Phoenix metro area, at no extra cost.',
-      es: 'Regálate un momento para ti. Nayibe lleva la camilla, los aceites y la calma a tu casa en Scottsdale y el área metropolitana de Phoenix, sin costo adicional.',
+      en: 'Treat yourself to a moment just for you. Nayibe brings the table, the oils and the calm to your home anywhere in Scottsdale and the Phoenix metro area.',
+      es: 'Regálate un momento para ti. Nayibe lleva la camilla, los aceites y la calma a tu casa en Scottsdale y el área metropolitana de Phoenix.',
     },
     cta: { en: 'Book your experience', es: 'Agenda tu experiencia' },
   },
@@ -46,11 +46,11 @@ export const defaultContent: SiteContent = {
     title: { en: 'Meet Nayibe Alarcon', es: 'Conoce a Nayibe Alarcon' },
     body: {
       en: [
-        'Nayibe Alarcon is the creator of AromaTouch by Nayibe A. She brings the AromaTouch Technique to Scottsdale and the Phoenix area with one idea: every session should feel personal.',
+        'Nayibe Alarcon is the therapist behind AromaTouch by Nayibe A. She brings the AromaTouch Technique to Scottsdale and the Phoenix area with one idea: every session should feel personal.',
         'She listens first, chooses the oils with you and applies them by hand, step by step, so you leave lighter, calmer and cared for. Sessions in English and Spanish.',
       ],
       es: [
-        'Nayibe Alarcon es la creadora de AromaTouch by Nayibe A. Lleva la Técnica AromaTouch a Scottsdale y el área de Phoenix con una idea: cada sesión debe sentirse personal.',
+        'Nayibe Alarcon es la terapeuta de AromaTouch by Nayibe A. Lleva la Técnica AromaTouch a Scottsdale y el área de Phoenix con una idea: cada sesión debe sentirse personal.',
         'Primero escucha, elige los aceites contigo y los aplica a mano, paso a paso, para que salgas más liviano, tranquilo y cuidado. Sesiones en español e inglés.',
       ],
     },

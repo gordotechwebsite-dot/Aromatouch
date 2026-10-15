@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Home as HomeIcon } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { useLang } from '../i18n'
 import { useContent } from '../content'
 import ProductCard from '../components/ProductCard'
@@ -7,15 +7,14 @@ import ProductCard from '../components/ProductCard'
 export default function Home() {
   const { t, tl } = useLang()
   const { hero, promo, about, therapies, products, tips, serviceAreas, business } = useContent()
-  const main = therapies[0]
 
   return (
     <>
       <section className="border-b border-line">
-        <div className="wrap grid items-center gap-10 py-14 md:grid-cols-[1.1fr_0.9fr] md:py-20">
+        <div className="wrap grid items-center gap-10 py-12 md:grid-cols-2 md:gap-14 md:py-16">
           <div>
             <p className="eyebrow">{t(hero.eyebrow)}</p>
-            <h1 className="mt-4 text-5xl leading-[1.05] md:text-7xl">{t(hero.title)}</h1>
+            <h1 className="mt-4 text-4xl leading-[1.08] md:text-5xl lg:text-6xl">{t(hero.title)}</h1>
             <p className="mt-6 max-w-xl text-lg text-ink/70">{t(hero.subtitle)}</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/book" className="btn">
@@ -27,31 +26,15 @@ export default function Home() {
             </div>
           </div>
           {hero.image && (
-            <div className="aspect-[4/5] overflow-hidden rounded-xl bg-sand">
-              <img src={hero.image} alt="" className="h-full w-full object-cover" />
-            </div>
-          )}
-        </div>
-      </section>
-
-      <section className="bg-ink text-cream">
-        <div className="wrap grid gap-8 py-14 md:grid-cols-[auto_1fr_auto] md:items-center">
-          <HomeIcon size={40} strokeWidth={1.2} className="text-gold-light" />
-          <div>
-            <h2 className="text-3xl md:text-4xl">{t(promo.title)}</h2>
-            <p className="mt-3 max-w-2xl text-cream/75">{t(promo.text)}</p>
-          </div>
-          {main?.price && (
-            <div className="border-l border-cream/20 pl-8">
-              <p className="text-xs uppercase tracking-[0.2em] text-gold-light">{t(main.name)}</p>
-              <p className="font-serif text-6xl">{main.price}</p>
+            <div className="flex aspect-[3/2] items-center justify-center">
+              <img src={hero.image} alt="" className="max-h-full w-full object-contain" />
             </div>
           )}
         </div>
       </section>
 
       <section className="wrap grid gap-12 py-20 md:grid-cols-2 md:items-center">
-        <div className="flex aspect-[4/5] items-center justify-center overflow-hidden bg-sand">
+        <div className="flex aspect-[4/5] items-center justify-center overflow-hidden">
           {about.photo ? (
             <img src={about.photo} alt={business.owner} className="h-full w-full object-cover" />
           ) : (
@@ -59,7 +42,7 @@ export default function Home() {
           )}
         </div>
         <div>
-          <p className="eyebrow">{t({ en: 'Founder & therapist', es: 'Creadora y terapeuta' })}</p>
+          <p className="eyebrow">{t({ en: 'Therapist', es: 'Terapeuta' })}</p>
           <h2 className="mt-3 text-4xl md:text-5xl">{t(about.title)}</h2>
           {tl(about.body).map((p, i) => (
             <p key={i} className="mt-5 leading-relaxed text-ink/75">
@@ -99,7 +82,7 @@ export default function Home() {
             <h2 className="mt-3 text-4xl md:text-5xl">{t({ en: 'The oils of AromaTouch', es: 'Los aceites de AromaTouch' })}</h2>
           </div>
           <Link to="/shop" className="link text-sm">
-            {t({ en: 'Shop all', es: 'Ver tienda' })}
+            {t({ en: 'See our products', es: 'Ver Nuestros Productos' })}
           </Link>
         </div>
         <div className="mt-10 grid grid-cols-2 gap-x-5 gap-y-10 md:grid-cols-4">
