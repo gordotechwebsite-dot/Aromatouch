@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Home as HomeIcon } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { useLang } from '../i18n'
 import { useContent } from '../content'
 import ProductCard from '../components/ProductCard'
@@ -7,7 +7,6 @@ import ProductCard from '../components/ProductCard'
 export default function Home() {
   const { t, tl } = useLang()
   const { hero, promo, about, therapies, products, tips, serviceAreas, business } = useContent()
-  const main = therapies[0]
 
   return (
     <>
@@ -29,22 +28,6 @@ export default function Home() {
           {hero.image && (
             <div className="flex aspect-[3/2] items-center justify-center">
               <img src={hero.image} alt="" className="max-h-full w-full object-contain" />
-            </div>
-          )}
-        </div>
-      </section>
-
-      <section className="bg-ink text-cream">
-        <div className="wrap grid gap-8 py-14 md:grid-cols-[auto_1fr_auto] md:items-center">
-          <HomeIcon size={40} strokeWidth={1.2} className="text-gold-light" />
-          <div>
-            <h2 className="text-3xl md:text-4xl">{t(promo.title)}</h2>
-            <p className="mt-3 max-w-2xl text-cream/75">{t(promo.text)}</p>
-          </div>
-          {main?.price && (
-            <div className="border-l border-cream/20 pl-8">
-              <p className="text-xs uppercase tracking-[0.2em] text-gold-light">{t(main.name)}</p>
-              <p className="font-serif text-6xl">{main.price}</p>
             </div>
           )}
         </div>

@@ -29,16 +29,16 @@ export const defaultContent: SiteContent = {
       es: 'La Técnica AromaTouch, en las manos de Nayibe Alarcon',
     },
     subtitle: {
-      en: 'Essential oil therapy with eight pure doTERRA oils, at your home in Scottsdale and the Phoenix metro area. Home visits are free.',
-      es: 'Terapia con ocho aceites esenciales puros doTERRA, en tu casa en Scottsdale y el área metropolitana de Phoenix. El domicilio es gratis.',
+      en: 'Essential oil therapy with eight pure doTERRA oils, at your home in Scottsdale and the Phoenix metro area.',
+      es: 'Terapia con ocho aceites esenciales puros doTERRA, en tu casa en Scottsdale y el área metropolitana de Phoenix.',
     },
     image: '/products/aromatouch-massage-blend-oil.webp',
   },
   promo: {
-    title: { en: 'Free home visits', es: 'Domicilio gratis' },
+    title: { en: 'Home visits', es: 'Servicio a domicilio' },
     text: {
-      en: 'Treat yourself to a moment just for you. Nayibe brings the table, the oils and the calm to your home anywhere in Scottsdale and the Phoenix metro area, at no extra cost.',
-      es: 'Regálate un momento para ti. Nayibe lleva la camilla, los aceites y la calma a tu casa en Scottsdale y el área metropolitana de Phoenix, sin costo adicional.',
+      en: 'Treat yourself to a moment just for you. Nayibe brings the table, the oils and the calm to your home anywhere in Scottsdale and the Phoenix metro area.',
+      es: 'Regálate un momento para ti. Nayibe lleva la camilla, los aceites y la calma a tu casa en Scottsdale y el área metropolitana de Phoenix.',
     },
     cta: { en: 'Book your experience', es: 'Agenda tu experiencia' },
   },
