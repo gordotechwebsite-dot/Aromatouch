@@ -1,0 +1,18 @@
+import { Link } from 'react-router-dom'
+import { useLang } from '../i18n'
+import { money } from '../content'
+import type { Product } from '../data/products'
+
+export default function ProductCard({ p }: { p: Product }) {
+  const { t } = useLang()
+  return (
+    <Link to={`/shop/${p.slug}`} className="group block">
+      <div className="aspect-[4/5] overflow-hidden rounded-xl bg-sand">
+        <img src={p.image} alt={t(p.name)} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+      </div>
+      <h3 className="mt-3 text-xl leading-tight">{t(p.name)}</h3>
+      <p className="mt-1 text-sm text-ink/60">{t(p.tagline)} · {p.size}</p>
+      <p className="mt-1 text-sm font-medium">{money(p.retail)}</p>
+    </Link>
+  )
+}
