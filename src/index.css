@@ -5,6 +5,7 @@
 @layer base {
   body {
     @apply bg-cream font-sans text-ink antialiased;
+    font-variant-numeric: lining-nums;
   }
   h1, h2, h3 {
     @apply font-serif;

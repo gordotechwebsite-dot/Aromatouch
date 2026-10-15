@@ -367,7 +367,7 @@ export default function Admin() {
           <>
             <div className="grid gap-4 md:grid-cols-2">
               <Text label="Nombre del negocio" value={b.name} onChange={setB('name')} />
-              <Text label="Creadora / terapeuta" value={b.owner} onChange={setB('owner')} />
+              <Text label="Terapeuta" value={b.owner} onChange={setB('owner')} />
               <Text label="Ciudad" value={b.city} onChange={setB('city')} />
               <Text label="OwnerID de doTERRA" value={b.doterraOwnerId} onChange={setB('doterraOwnerId')} />
               <Text label={`Teléfono (solo dígitos) ${b.phone ? '· ' + prettyPhone(b.phone) : ''}`} value={b.phone} onChange={setB('phone')} />
