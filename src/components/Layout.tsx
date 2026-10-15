@@ -39,7 +39,7 @@ export default function Layout() {
             ))}
           </nav>
           <div className="hidden items-center gap-4 lg:flex">
-            <Link to="/book" className="btn">
+            <Link to="/book" className="btn bg-aqua text-ink hover:bg-aqua-dark">
               {t({ en: 'Book a session', es: 'Reservar' })}
             </Link>
           </div>
@@ -56,7 +56,7 @@ export default function Layout() {
                 </NavLink>
               ))}
               <div className="pt-4">
-                    <Link to="/book" className="btn" onClick={() => setOpen(false)}>
+                    <Link to="/book" className="btn bg-aqua text-ink hover:bg-aqua-dark" onClick={() => setOpen(false)}>
                   {t({ en: 'Book a session', es: 'Reservar' })}
                 </Link>
               </div>

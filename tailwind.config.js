@@ -9,6 +9,7 @@ export default {
         line: '#d9cbbb',
         ink: '#0f3b37',
         teal: { DEFAULT: '#2f6e67', soft: '#9cc5be' },
+        aqua: { DEFAULT: '#5cc6b8', dark: '#45b0a2' },
         gold: { DEFAULT: '#9c7641', light: '#d2b483' },
       },
       fontFamily: {
