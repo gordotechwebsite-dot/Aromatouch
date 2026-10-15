@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <>
       <section className="border-b border-line">
-        <div className="wrap grid items-center gap-10 py-14 md:grid-cols-[1.1fr_0.9fr] md:py-20">
+        <div className="wrap grid items-center gap-10 py-12 md:grid-cols-2 md:gap-14 md:py-16">
           <div>
             <p className="eyebrow">{t(hero.eyebrow)}</p>
-            <h1 className="mt-4 text-5xl leading-[1.05] md:text-7xl">{t(hero.title)}</h1>
+            <h1 className="mt-4 text-4xl leading-[1.08] md:text-5xl lg:text-6xl">{t(hero.title)}</h1>
             <p className="mt-6 max-w-xl text-lg text-ink/70">{t(hero.subtitle)}</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/book" className="btn">
@@ -27,7 +27,7 @@ export default function Home() {
             </div>
           </div>
           {hero.image && (
-            <div className="aspect-[4/5] overflow-hidden rounded-xl bg-sand">
+            <div className="aspect-[3/2] overflow-hidden rounded-xl bg-sand">
               <img src={hero.image} alt="" className="h-full w-full object-cover" />
             </div>
           )}
