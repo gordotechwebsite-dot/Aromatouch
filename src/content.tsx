@@ -54,7 +54,7 @@ export const defaultContent: SiteContent = {
         'Primero escucha, elige los aceites contigo y los aplica a mano, paso a paso, para que salgas más liviano, tranquilo y cuidado. Sesiones en español e inglés.',
       ],
     },
-    photo: '',
+    photo: '/about/nayibe.webp',
   },
   serviceAreas,
   therapies,
