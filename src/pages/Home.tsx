@@ -34,7 +34,7 @@ export default function Home() {
       </section>
 
       <section className="wrap grid gap-12 py-20 md:grid-cols-2 md:items-center">
-        <div className="flex aspect-[4/5] items-center justify-center overflow-hidden">
+        <div className={`flex items-center justify-center overflow-hidden ${about.photo ? 'aspect-square' : 'aspect-[4/5]'}`}>
           {about.photo ? (
             <img src={about.photo} alt={business.owner} className="h-full w-full object-cover" />
           ) : (
