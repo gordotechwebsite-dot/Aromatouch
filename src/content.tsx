@@ -50,7 +50,7 @@ export const defaultContent: SiteContent = {
         'She listens first, chooses the oils with you and applies them by hand, step by step, so you leave lighter, calmer and cared for. Sessions in English and Spanish.',
       ],
       es: [
-        'Nayibe Alarcon es la terapeuta de AromaTouch by Nayibe A. Lleva la Técnica AromaTouch a Scottsdale y el área de Phoenix con una idea: cada sesión debe sentirse personal.',
+        'Nayibe Alarcon es la terapeuta de AromaTouch. Lleva la Técnica AromaTouch a Scottsdale y el área de Phoenix con una idea: cada sesión debe sentirse personal.',
         'Primero escucha, elige los aceites contigo y los aplica a mano, paso a paso, para que salgas más liviano, tranquilo y cuidado. Sesiones en español e inglés.',
       ],
     },
