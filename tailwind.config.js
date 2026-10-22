@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream: '#f6f1eb',
+        cream: '#fcfbf9',
         sand: '#ece3d8',
         line: '#d9cbbb',
         ink: '#0f3b37',

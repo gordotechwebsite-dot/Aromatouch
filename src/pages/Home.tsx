@@ -12,8 +12,7 @@ export default function Home() {
       <section className="border-b border-line">
         <div className="wrap grid items-center gap-10 py-12 md:grid-cols-2 md:gap-14 md:py-16">
           <div>
-            <p className="eyebrow">{t(hero.eyebrow)}</p>
-            <h1 className="mt-4 text-4xl leading-[1.08] md:text-5xl lg:text-6xl">{t(hero.title)}</h1>
+            <h1 className="text-4xl leading-[1.08] md:text-5xl lg:text-6xl">{t(hero.title)}</h1>
             <p className="mt-6 max-w-xl text-lg text-ink/70">{t(hero.subtitle)}</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/book" className="btn">
