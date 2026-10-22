@@ -6,7 +6,7 @@ import ProductCard from '../components/ProductCard'
 
 export default function Home() {
   const { t, tl } = useLang()
-  const { hero, promo, about, therapies, products, tips, serviceAreas, business } = useContent()
+  const { hero, promo, about, therapies, products, serviceAreas, business } = useContent()
 
   return (
     <>
@@ -91,27 +91,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      {tips.length > 0 && (
-        <section className="border-y border-line bg-sand/60">
-          <div className="wrap py-20">
-            <div className="flex items-end justify-between gap-6">
-              <h2 className="text-4xl md:text-5xl">{t({ en: 'Wellness tips', es: 'Consejos de bienestar' })}</h2>
-              <Link to="/wellness" className="link text-sm">
-                {t({ en: 'All tips', es: 'Todos los consejos' })}
-              </Link>
-            </div>
-            <div className="mt-10 grid gap-8 md:grid-cols-3">
-              {tips.slice(0, 3).map((tip, i) => (
-                <article key={i} className="border-t border-ink pt-5">
-                  <h3 className="text-2xl">{t(tip.title)}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-ink/70">{t(tip.body)}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
 
       <section className="wrap py-20 text-center">
         <p className="eyebrow">{t({ en: 'Where we go', es: 'Dónde atendemos' })}</p>
