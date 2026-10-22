@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useLayoutEffect, useRef, useState } from 'react'
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { useLang } from '../i18n'
@@ -15,6 +15,35 @@ export default function Layout() {
   const { t } = useLang()
   const { business } = useContent()
   const [open, setOpen] = useState(false)
+  const mainRef = useRef<HTMLElement>(null)
+
+  useLayoutEffect(() => {
+    const main = mainRef.current
+    if (!main) return
+    const io = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in')
+            io.unobserve(e.target)
+          }
+        }),
+      { rootMargin: '0px 0px -8% 0px' },
+    )
+    const scan = () =>
+      main.querySelectorAll(':scope > * > *').forEach((el) => {
+        if (el.classList.contains('reveal')) return
+        el.classList.add('reveal')
+        io.observe(el)
+      })
+    scan()
+    const mo = new MutationObserver(scan)
+    mo.observe(main, { childList: true, subtree: true })
+    return () => {
+      io.disconnect()
+      mo.disconnect()
+    }
+  }, [])
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -65,7 +94,7 @@ export default function Layout() {
         )}
       </header>
 
-      <main className="flex-1">
+      <main ref={mainRef} className="flex-1 overflow-x-clip">
         <Outlet />
       </main>
 
