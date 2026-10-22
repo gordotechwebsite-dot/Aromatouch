@@ -32,3 +32,15 @@
     @apply w-full border border-line bg-white px-3 py-2.5 text-sm text-ink outline-none focus:border-teal;
   }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateX(48px);
+    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: none;
+  }
+}
