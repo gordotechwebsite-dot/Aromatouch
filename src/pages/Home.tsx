@@ -26,7 +26,7 @@ export default function Home() {
             </div>
           </div>
           {hero.image && (
-            <div className="flex aspect-[3/2] items-center justify-center">
+            <div className="flex aspect-[3/2] items-center justify-center bg-[#3ac1cc]">
               <img src={hero.image} alt="" className="max-h-full w-full object-contain" />
             </div>
           )}
