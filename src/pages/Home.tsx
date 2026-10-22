@@ -2,11 +2,10 @@ import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { useLang } from '../i18n'
 import { useContent } from '../content'
-import ProductCard from '../components/ProductCard'
 
 export default function Home() {
   const { t, tl } = useLang()
-  const { hero, promo, about, therapies, products, serviceAreas, business } = useContent()
+  const { hero, promo, about, therapies, serviceAreas, business } = useContent()
 
   return (
     <>
@@ -75,21 +74,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="wrap py-20">
-        <div className="flex items-end justify-between gap-6">
-          <div>
-            <p className="eyebrow">doTERRA</p>
-            <h2 className="mt-3 text-4xl md:text-5xl">{t({ en: 'The oils of AromaTouch', es: 'Los aceites de AromaTouch' })}</h2>
-          </div>
-          <Link to="/shop" className="link text-sm">
-            {t({ en: 'See our products', es: 'Ver Nuestros Productos' })}
-          </Link>
-        </div>
-        <div className="mt-10 grid grid-cols-2 gap-x-5 gap-y-10 md:grid-cols-4">
-          {products.slice(0, 4).map((p) => (
-            <ProductCard key={p.slug} p={p} />
-          ))}
-        </div>
+      <section className="wrap py-16 text-center">
+        <Link to="/shop" className="btn">
+          {t({ en: 'Discover our products', es: 'Conoce nuestros productos' })} <ArrowRight size={16} />
+        </Link>
       </section>
 
       <section className="wrap py-20 text-center">
