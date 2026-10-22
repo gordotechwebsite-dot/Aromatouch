@@ -5,7 +5,7 @@ import { useContent } from '../content'
 
 export default function Home() {
   const { t, tl } = useLang()
-  const { hero, promo, about, therapies, serviceAreas, business } = useContent()
+  const { hero, promo, about, therapies, business } = useContent()
 
   return (
     <>
@@ -77,17 +77,6 @@ export default function Home() {
       <section className="wrap py-16 text-center">
         <Link to="/shop" className="btn">
           {t({ en: 'Discover our products', es: 'Conoce nuestros productos' })} <ArrowRight size={16} />
-        </Link>
-      </section>
-
-      <section className="wrap py-20 text-center">
-        <p className="eyebrow">{t({ en: 'Where we go', es: 'Dónde atendemos' })}</p>
-        <h2 className="mx-auto mt-3 max-w-3xl text-4xl md:text-5xl">
-          {t({ en: 'Scottsdale and the Phoenix metro area', es: 'Scottsdale y el área metropolitana de Phoenix' })}
-        </h2>
-        <p className="mx-auto mt-6 max-w-3xl leading-loose text-ink/70">{serviceAreas.join(' · ')}</p>
-        <Link to="/book" className="btn mt-10">
-          {t(promo.cta)}
         </Link>
       </section>
     </>
