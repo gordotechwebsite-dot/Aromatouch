@@ -50,8 +50,8 @@ export const defaultContent: SiteContent = {
         'She listens first, chooses the oils with you and applies them by hand, step by step, so you leave lighter, calmer and cared for. Sessions in English and Spanish.',
       ],
       es: [
-        'Nayibe Alarcon es la terapeuta de AromaTouch. Lleva la Técnica AromaTouch a Scottsdale y el área de Phoenix con una idea: cada sesión debe sentirse personal.',
-        'Primero escucha, elige los aceites contigo y los aplica a mano, paso a paso, para que salgas más liviano, tranquilo y cuidado. Sesiones en español e inglés.',
+        'Su especialidad es la Técnica AromaTouch: ocho aceites esenciales doTERRA aplicados con precisión sobre la espalda y los pies, directamente en tu hogar de Scottsdale o del área metropolitana de Phoenix.',
+        'Antes de comenzar, escucha cómo llegas y adapta cada movimiento a tu cuerpo. El resultado: calma profunda, ligereza física y una respiración más serena. Atiende en español e inglés.',
       ],
     },
     photo: '/about/nayibe.webp',
